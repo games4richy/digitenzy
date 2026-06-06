@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digitenzy — Digital Marketing Blog for 2026 and Beyond</title>
+  <meta name="description" content="Digitenzy covers SEO, GEO, social media, email marketing, paid ads, and monetization strategies that actually work in 2026. Real tactics, real results." />
+  <meta name="keywords" content="digital marketing blog, SEO 2026, GEO optimization, social media marketing, email marketing, paid ads, blog monetization" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Digitenzy" />
+  <link rel="canonical" href="https://digitenzy.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://digitenzy.com/" />
+  <meta property="og:title" content="Digitenzy — Digital Marketing Blog for 2026 and Beyond" />
+  <meta property="og:description" content="Real digital marketing strategies for SEO, GEO, social media, email, paid ads, and monetization in 2026." />
+  <meta property="og:image" content="https://digitenzy.com/src/digitenzy-og.webp" />
+  <meta property="og:site_name" content="Digitenzy" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digitenzy — Digital Marketing Blog for 2026" />
+  <meta name="twitter:description" content="Real digital marketing strategies that work in 2026: SEO, GEO, social media, email, paid ads, and monetization." />
+  <meta name="twitter:image" content="https://digitenzy.com/src/digitenzy-og.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF4D1C'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='18' fill='white'>D</text></svg>" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Digitenzy",
+    "url": "https://digitenzy.com/",
+    "description": "Digital marketing blog covering SEO, GEO, social media, email marketing, paid ads, and monetization strategies for 2026.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Digitenzy",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitenzy.com/src/digitenzy-og.webp"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://digitenzy.com/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Digitenzy",
+    "url": "https://digitenzy.com/",
+    "description": "Digital marketing strategies that actually work in 2026.",
+    "inLanguage": "en-US",
+    "blogPost": [
+      {"@type":"BlogPosting","headline":"GEO vs SEO in 2026","url":"https://digitenzy.com/geo-vs-seo-2026"},
+      {"@type":"BlogPosting","headline":"What Is Generative Engine Optimization (GEO)?","url":"https://digitenzy.com/what-is-generative-engine-optimization-geo"},
+      {"@type":"BlogPosting","headline":"Topical Authority in 2026","url":"https://digitenzy.com/topical-authority-2026"}
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #FF4D1C;
+      --orange-light: #FF7A52;
+      --black: #0E0E0E;
+      --dark: #1A1A1A;
+      --surface: #F5F2EE;
+      --surface2: #EDE9E3;
+      --text: #1A1A1A;
+      --text-muted: #6B6560;
+      --white: #FDFCFA;
+      --border: #DDD8D0;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-serif: 'Lora', serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--black);
+      border-bottom: 2px solid var(--orange);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--white);
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    .logo-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.8); }
+    }
+
+    nav { display: flex; align-items: center; gap: 0.25rem; }
+
+    nav a {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.75);
+      padding: 0.4rem 0.75rem;
+      border-radius: 4px;
+      letter-spacing: 0.3px;
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+
+    nav a:hover { color: var(--white); background: rgba(255,77,28,0.15); }
+    nav a.active { color: var(--orange); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 1rem 1.5rem;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a:hover { color: var(--orange); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 5rem 1.5rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 60% 50%, rgba(255,77,28,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,77,28,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,77,28,0.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,77,28,0.15);
+      border: 1px solid rgba(255,77,28,0.4);
+      color: var(--orange-light);
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--orange);
+    }
+
+    .hero p {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 580px;
+      margin: 0 auto 2rem;
+      line-height: 1.75;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--orange);
+    }
+
+    .hero-stat span {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.5px;
+    }
+
+    /* ── SECTION LAYOUT ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    section { padding: 4rem 1.5rem; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-label {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--black);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── FEATURED / HERO ARTICLE ── */
+    .featured-section {
+      background: var(--surface);
+      border-top: 3px solid var(--orange);
+    }
+
+    .featured-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: stretch;
+    }
+
+    .featured-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .featured-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+
+    .featured-card.big { grid-row: span 2; }
+
+    .featured-card .card-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+
+    .featured-card.big .card-img { aspect-ratio: 4/3; }
+
+    .card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+
+    .card-cat {
+      font-family: var(--font-display);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.6rem;
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.05rem;
+      line-height: 1.35;
+      color: var(--black);
+      margin-bottom: 0.75rem;
+    }
+
+    .featured-card.big .card-title { font-size: 1.4rem; }
+
+    .card-excerpt {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .card-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .card-meta .read-time {
+      background: var(--surface2);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-family: var(--font-display);
+      font-weight: 600;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--orange);
+      letter-spacing: 0.3px;
+      margin-top: 1rem;
+      transition: gap 0.2s;
+    }
+
+    .read-more:hover { gap: 0.7rem; }
+
+    /* ── ALL ARTICLES GRID ── */
+    .articles-section { background: var(--white); }
+
+    .articles-section-block {
+      margin-bottom: 4rem;
+    }
+
+    .articles-section-block:last-child { margin-bottom: 0; }
+
+    .section-header-full {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .cat-dot {
+      width: 12px;
+      height: 12px;
+      background: var(--orange);
+      border-radius: 3px;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .cat-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: var(--black);
+    }
+
+    .cat-count {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: var(--surface2);
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+    }
+
+    .cat-line { flex: 1; height: 1px; background: var(--surface2); }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .article-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-color: var(--orange);
+    }
+
+    .article-img-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      background: var(--surface2);
+    }
+
+    .article-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+
+    .article-card:hover .article-img-wrap img { transform: scale(1.04); }
+
+    .article-img-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .art-body { padding: 1.2rem; flex: 1; display: flex; flex-direction: column; }
+
+    .art-cat {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.5rem;
+    }
+
+    .art-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--black);
+      margin-bottom: 0.6rem;
+      flex: 1;
+    }
+
+    .art-title a:hover { color: var(--orange); }
+
+    .art-excerpt {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .art-meta {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+
+    .art-meta .tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.68rem;
+    }
+
+    /* ── COLOR THEMES PER CATEGORY ── */
+    .cat-seo .cat-dot, .cat-seo .art-cat { background: #FF4D1C; color: #FF4D1C; }
+    .cat-social .cat-dot { background: #7C3AED; }
+    .cat-social .art-cat { color: #7C3AED; }
+    .cat-email .cat-dot { background: #0EA5E9; }
+    .cat-email .art-cat { color: #0EA5E9; }
+    .cat-ads .cat-dot { background: #10B981; }
+    .cat-ads .art-cat { color: #10B981; }
+    .cat-monetize .cat-dot { background: #F59E0B; }
+    .cat-monetize .art-cat { color: #F59E0B; }
+
+    /* article card accent borders */
+    .cat-social .article-card:hover { border-color: #7C3AED; }
+    .cat-email .article-card:hover { border-color: #0EA5E9; }
+    .cat-ads .article-card:hover { border-color: #10B981; }
+    .cat-monetize .article-card:hover { border-color: #F59E0B; }
+
+    /* ── NEWSLETTER BAND ── */
+    .newsletter-band {
+      background: var(--black);
+      color: var(--white);
+      padding: 4rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter-band::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(255,77,28,0.2) 0%, transparent 70%);
+    }
+
+    .newsletter-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .newsletter-band h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.75rem;
+    }
+
+    .newsletter-band h2 span { color: var(--orange); }
+
+    .newsletter-band p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 1.75rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.85rem 1.1rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.06);
+      border-radius: 8px;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .newsletter-form input::placeholder { color: rgba(255,255,255,0.3); }
+    .newsletter-form input:focus { border-color: var(--orange); }
+
+    .newsletter-form button {
+      padding: 0.85rem 1.4rem;
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover { background: var(--orange-light); transform: translateY(-1px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.5);
+      padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo { margin-bottom: 0.75rem; }
+
+    .footer-brand p {
+      font-size: 0.82rem;
+      line-height: 1.7;
+      max-width: 240px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .footer-col ul a {
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.45);
+      transition: color 0.2s;
+    }
+
+    .footer-col ul a:hover { color: var(--orange); }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+    }
+
+    .footer-bottom a { color: rgba(255,255,255,0.35); }
+    .footer-bottom a:hover { color: var(--orange); }
+
+    /* ── PLACEHOLDER IMAGE COLORS ── */
+    .img-seo1  { background: linear-gradient(135deg, #1a1a2e, #16213e); }
+    .img-seo2  { background: linear-gradient(135deg, #2d1b00, #4a2e00); }
+    .img-seo3  { background: linear-gradient(135deg, #0a0a0a, #1c1c1c); }
+    .img-seo4  { background: linear-gradient(135deg, #1a0a00, #3d1500); }
+    .img-seo5  { background: linear-gradient(135deg, #0d1117, #161b22); }
+    .img-seo6  { background: linear-gradient(135deg, #1a1a00, #2a2a00); }
+    .img-sm1   { background: linear-gradient(135deg, #1a0a3d, #2d0a5e); }
+    .img-sm2   { background: linear-gradient(135deg, #3d0a1a, #5e0a2d); }
+    .img-sm3   { background: linear-gradient(135deg, #0a2a3d, #0a3d5e); }
+    .img-sm4   { background: linear-gradient(135deg, #1a3d0a, #2d5e0a); }
+    .img-sm5   { background: linear-gradient(135deg, #3d2a0a, #5e3d0a); }
+    .img-sm6   { background: linear-gradient(135deg, #0a0a3d, #0a0a5e); }
+    .img-em1   { background: linear-gradient(135deg, #001a3d, #002d5e); }
+    .img-em2   { background: linear-gradient(135deg, #002a1a, #003d2d); }
+    .img-em3   { background: linear-gradient(135deg, #1a001a, #2d002d); }
+    .img-em4   { background: linear-gradient(135deg, #001a1a, #002d2d); }
+    .img-em5   { background: linear-gradient(135deg, #0a1a00, #152a00); }
+    .img-em6   { background: linear-gradient(135deg, #1a1a1a, #2a1a0a); }
+    .img-ad1   { background: linear-gradient(135deg, #0a1a00, #1a3d00); }
+    .img-ad2   { background: linear-gradient(135deg, #003d1a, #005e2a); }
+    .img-ad3   { background: linear-gradient(135deg, #00271a, #003d2a); }
+    .img-ad4   { background: linear-gradient(135deg, #1a2700, #2a3d00); }
+    .img-ad5   { background: linear-gradient(135deg, #00170a, #002a15); }
+    .img-ad6   { background: linear-gradient(135deg, #061a00, #0a2a00); }
+    .img-mn1   { background: linear-gradient(135deg, #1a1000, #2a1a00); }
+    .img-mn2   { background: linear-gradient(135deg, #1a0a00, #2d1500); }
+    .img-mn3   { background: linear-gradient(135deg, #0a0a1a, #15152a); }
+    .img-mn4   { background: linear-gradient(135deg, #1a0000, #2d0000); }
+    .img-mn5   { background: linear-gradient(135deg, #0a1500, #152a00); }
+    .img-mn6   { background: linear-gradient(135deg, #1a1500, #2a1e00); }
+
+    .img-icon {
+      font-size: 2.5rem;
+      opacity: 0.3;
+    }
+
+    /* ── SCROLL TO TOP ── */
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 1.5rem;
+      width: 44px;
+      height: 44px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 14px rgba(255,77,28,0.4);
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 50;
+    }
+
+    .scroll-top.visible { opacity: 1; transform: translateY(0); }
+
+    .scroll-top svg { width: 18px; height: 18px; fill: white; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .featured-grid { grid-template-columns: 1fr; }
+      .featured-card.big { grid-row: auto; }
+      .articles-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .articles-grid { grid-template-columns: 1fr; }
+      .featured-grid { gap: 1.5rem; }
+      .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .footer-brand p { max-width: 100%; }
+      section { padding: 3rem 1rem; }
+      .featured-section { padding: 3rem 1rem; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form button { width: 100%; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 3.5rem 1rem 2.5rem; }
+      .hero-stats { gap: 1.5rem; }
+      .hero-stat strong { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="header-inner">
+    <a href="https://digitenzy.com/" class="logo">
+      Digit<span>enzy</span><span class="logo-dot"></span>
+    </a>
+    <nav>
+      <a href="https://digitenzy.com/" class="active">Home</a>
+      <a href="https://digitenzy.com/category/seo-content">SEO &amp; Content</a>
+      <a href="https://digitenzy.com/category/social-media">Social Media</a>
+      <a href="https://digitenzy.com/category/email-marketing">Email Marketing</a>
+      <a href="https://digitenzy.com/category/paid-ads">Paid Ads</a>
+      <a href="https://digitenzy.com/category/monetization">Monetization</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="https://digitenzy.com/">🏠 Home</a>
+    <a href="https://digitenzy.com/category/seo-content">🔍 SEO &amp; Content</a>
+    <a href="https://digitenzy.com/category/social-media">📱 Social Media</a>
+    <a href="https://digitenzy.com/category/email-marketing">📧 Email Marketing</a>
+    <a href="https://digitenzy.com/category/paid-ads">💰 Paid Ads</a>
+    <a href="https://digitenzy.com/category/monetization">💸 Monetization</a>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="logo-dot"></span>
+      Updated for 2026
+    </div>
+    <h1>Digital Marketing That<br /><em>Actually Works</em> in 2026</h1>
+    <p>No fluff, no hype. Just strategies for SEO, GEO, social media, email, paid ads, and monetization that I've tested and seen work in the real world.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>30</strong><span>Deep-dive articles</span></div>
+      <div class="hero-stat"><strong>5</strong><span>Topic categories</span></div>
+      <div class="hero-stat"><strong>2026</strong><span>Always current</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURED ── -->
+<section class="featured-section">
+  <div style="max-width:1200px;margin:0 auto;padding:0 0;">
+    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.75rem;">
+      <span class="section-label">Featured</span>
+      <div style="flex:1;height:1px;background:var(--border);"></div>
+    </div>
+    <div class="featured-grid">
+      <!-- Big card -->
+      <a href="https://digitenzy.com/geo-vs-seo-2026" class="featured-card big">
+        <div class="card-img img-seo1" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;">
+          <img src="https://digitenzy.com/src/geo-vs-seo-2026.webp" alt="GEO vs SEO in 2026" onerror="this.style.display='none'" loading="lazy" />
+          <span class="img-icon" style="position:absolute;">🔍</span>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">SEO &amp; Content</div>
+          <h2 class="card-title">GEO vs SEO in 2026: How to Optimize Your Content for Google AI Overviews and ChatGPT Search</h2>
+          <p class="card-excerpt">Google AI Overviews changed everything. Here's how to play both fields — traditional search and generative engine optimization — without starting over.</p>
+          <div class="card-meta">
+            <span class="read-time">14 min read</span>
+            <span>June 2026</span>
+          </div>
+          <span class="read-more">Read Article →</span>
+        </div>
+      </a>
+      <!-- Small cards -->
+      <a href="https://digitenzy.com/what-is-generative-engine-optimization-geo" class="featured-card">
+        <div class="card-img img-seo2" style="display:flex;align-items:center;justify-content:center;position:relative;">
+          <img src="https://digitenzy.com/src/what-is-generative-engine-optimization-geo.webp" alt="What Is GEO" onerror="this.style.display='none'" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+          <span class="img-icon" style="position:relative;z-index:1;">🤖</span>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">SEO &amp; Content</div>
+          <h2 class="card-title">What Is Generative Engine Optimization (GEO)? The Complete Beginner's Guide for 2026</h2>
+          <p class="card-excerpt">GEO is what replaces plain SEO when AI is doing the searching. Here's how it works and what you need to change right now.</p>
+          <div class="card-meta"><span class="read-time">12 min read</span></div>
+          <span class="read-more">Read Article →</span>
+        </div>
+      </a>
+      <a href="https://digitenzy.com/social-search-instagram-tiktok-2026" class="featured-card">
+        <div class="card-img img-sm1" style="display:flex;align-items:center;justify-content:center;position:relative;">
+          <img src="https://digitenzy.com/src/social-search-instagram-tiktok-2026.webp" alt="Social Search 2026" onerror="this.style.display='none'" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+          <span class="img-icon" style="position:relative;z-index:1;">📲</span>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">Social Media</div>
+          <h2 class="card-title">Social Search Is the New Google: How to Optimize Your Instagram and TikTok for Discovery in 2026</h2>
+          <p class="card-excerpt">More than half of Gen Z uses TikTok and Instagram to search. If you're not optimizing for that, you're invisible to a huge chunk of buyers.</p>
+          <div class="card-meta"><span class="read-time">13 min read</span></div>
+          <span class="read-more">Read Article →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ALL ARTICLES ── -->
+<section class="articles-section">
+  <div style="max-width:1200px;margin:0 auto;">
+
+    <!-- SEO & Content -->
+    <div class="articles-section-block cat-seo">
+      <div class="section-header-full">
+        <span class="cat-dot"></span>
+        <h2 class="cat-title">SEO &amp; Content</h2>
+        <span class="cat-count">6 articles</span>
+        <span class="cat-line"></span>
+        <a href="https://digitenzy.com/category/seo-content" style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;color:var(--orange);white-space:nowrap;">View all →</a>
+      </div>
+      <div class="articles-grid">
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-seo1">
+              <img src="https://digitenzy.com/src/geo-vs-seo-2026.webp" alt="GEO vs SEO 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">SEO &amp; Content</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/geo-vs-seo-2026">GEO vs SEO in 2026: How to Optimize for Google AI Overviews and ChatGPT Search</a></h3>
+            <p class="art-excerpt">The rules of search changed when AI Overviews launched. I break down exactly what GEO means, how it differs from traditional SEO, and which one you should be focusing on right now.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-seo2">
+              <img src="https://digitenzy.com/src/what-is-generative-engine-optimization-geo.webp" alt="What Is GEO" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">SEO &amp; Content</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/what-is-generative-engine-optimization-geo">What Is Generative Engine Optimization (GEO)? Complete Beginner's Guide for 2026</a></h3>
+            <p class="art-excerpt">GEO is the new discipline of getting your content cited by AI models like ChatGPT, Perplexity, and Google's AI Overviews. Here's everything you need to know to start.</p>
+            <div class="art-meta"><span class="tag">12 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-seo3">
+              <img src="https://digitenzy.com/src/topical-authority-2026.webp" alt="Topical Authority 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">SEO &amp; Content</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/topical-authority-2026">Topical Authority in 2026: How to Build Content Clusters That Rank in AI and Google Search</a></h3>
+            <p class="art-excerpt">Publishing random articles is over. In 2026, topical authority is what separates sites that get featured in AI answers from sites that vanish into page 4.</p>
+            <div class="art-meta"><span class="tag">15 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-seo4">
+              <img src="https://digitenzy.com/src/google-ai-overviews-traffic.webp" alt="Google AI Overviews Traffic" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">SEO &amp; Content</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/google-ai-overviews-traffic">Google AI Overviews Are Stealing Your Traffic — Here's Exactly How to Get Featured in Them</a></h3>
+            <p class="art-excerpt">One site I work with lost 34% of organic traffic the month AI Overviews expanded. Here's the recovery strategy that actually worked, step by step.</p>
+            <div class="art-meta"><span class="tag">16 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-seo5">
+              <img src="https://digitenzy.com/src/zero-click-search-2026.webp" alt="Zero Click Search 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">SEO &amp; Content</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/zero-click-search-2026">Zero-Click Search in 2026: Why You're Losing Organic Traffic and the 7 Strategies That Fix It</a></h3>
+            <p class="art-excerpt">Nearly 65% of searches now end without a click. That's not a bug — it's the new reality. Here's how to build a traffic strategy that doesn't depend on the click.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-seo6">
+              <img src="https://digitenzy.com/src/ai-content-vs-human-content-google-2026.webp" alt="AI vs Human Content" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">SEO &amp; Content</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/ai-content-vs-human-content-google-2026">AI-Generated Content vs Human-Written Content: Which Ranks Better on Google in 2026?</a></h3>
+            <p class="art-excerpt">I tested this with three websites over six months. The answer is more nuanced than "AI bad, human good" — and the actual winner surprised me.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div class="articles-section-block cat-social">
+      <div class="section-header-full">
+        <span class="cat-dot"></span>
+        <h2 class="cat-title">Social Media</h2>
+        <span class="cat-count">6 articles</span>
+        <span class="cat-line"></span>
+        <a href="https://digitenzy.com/category/social-media" style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;color:#7C3AED;white-space:nowrap;">View all →</a>
+      </div>
+      <div class="articles-grid">
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-sm1">
+              <img src="https://digitenzy.com/src/social-search-instagram-tiktok-2026.webp" alt="Social Search 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Social Media</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/social-search-instagram-tiktok-2026">Social Search Is the New Google: How to Optimize Instagram and TikTok for Discovery in 2026</a></h3>
+            <p class="art-excerpt">If you think Google is your only search engine, you're leaving discovery on the table. Here's how to show up where your audience actually searches.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-sm2">
+              <img src="https://digitenzy.com/src/instagram-overtakes-facebook-2026.webp" alt="Instagram vs Facebook 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Social Media</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/instagram-overtakes-facebook-2026">Instagram Overtakes Facebook in 2026: What Every Marketer Needs to Know Right Now</a></h3>
+            <p class="art-excerpt">The shift finally happened. Instagram is now Meta's top-performing platform — and the implications for your content strategy are bigger than most people realize.</p>
+            <div class="art-meta"><span class="tag">11 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-sm3">
+              <img src="https://digitenzy.com/src/ugc-marketing-strategy-2026.webp" alt="UGC Marketing 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Social Media</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/ugc-marketing-strategy-2026">UGC Marketing Strategy 2026: How User-Generated Content Is Replacing Paid Ads on Social Media</a></h3>
+            <p class="art-excerpt">Brands spending $20K/month on polished creative are getting crushed by competitors who figured out how to generate authentic UGC for almost nothing.</p>
+            <div class="art-meta"><span class="tag">12 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-sm4">
+              <img src="https://digitenzy.com/src/short-form-video-reels-tiktok-shorts-2026.webp" alt="Short Form Video 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Social Media</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/short-form-video-reels-tiktok-shorts-2026">Short-Form Video Domination: The Ultimate Guide to Reels, TikTok, and YouTube Shorts in 2026</a></h3>
+            <p class="art-excerpt">After 18 months of testing across all three platforms, I know exactly what works and what's a waste of your time. This is what I'd tell a friend starting from scratch.</p>
+            <div class="art-meta"><span class="tag">15 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-sm5">
+              <img src="https://digitenzy.com/src/social-commerce-instagram-tiktok-pinterest-2026.webp" alt="Social Commerce 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Social Media</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/social-commerce-instagram-tiktok-pinterest-2026">Social Commerce in 2026: How to Sell Directly on Instagram, TikTok Shop, and Pinterest Without a Website</a></h3>
+            <p class="art-excerpt">The checkout friction is gone. Your customers can now buy without ever leaving the app — and that changes everything about how you should structure your social strategy.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-sm6">
+              <img src="https://digitenzy.com/src/creator-economy-2026.webp" alt="Creator Economy 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Social Media</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/creator-economy-2026">The Creator Economy in 2026: How to Build an Audience That Trusts You (and Buys from You)</a></h3>
+            <p class="art-excerpt">The creator economy didn't collapse — it matured. The ones making real money now look nothing like the influencers of 2020. Here's what changed and how to position yourself.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Email Marketing -->
+    <div class="articles-section-block cat-email">
+      <div class="section-header-full">
+        <span class="cat-dot"></span>
+        <h2 class="cat-title">Email Marketing</h2>
+        <span class="cat-count">6 articles</span>
+        <span class="cat-line"></span>
+        <a href="https://digitenzy.com/category/email-marketing" style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;color:#0EA5E9;white-space:nowrap;">View all →</a>
+      </div>
+      <div class="articles-grid">
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-em1">
+              <img src="https://digitenzy.com/src/ai-email-marketing-2026.webp" alt="AI Email Marketing 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Email Marketing</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/ai-email-marketing-2026">AI-Powered Email Marketing in 2026: How to Write Emails That Convert Using Automation and Personalization</a></h3>
+            <p class="art-excerpt">AI didn't kill email marketing. It made it 10x more powerful for people who know how to use it. Here's what I'm doing now versus what I was doing two years ago.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-em2">
+              <img src="https://digitenzy.com/src/email-marketing-vs-social-media-2026.webp" alt="Email vs Social 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Email Marketing</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/email-marketing-vs-social-media-2026">Email Marketing vs Social Media in 2026: Which One Actually Drives More Sales?</a></h3>
+            <p class="art-excerpt">I pulled 12 months of data from four different businesses. The answer wasn't what I expected — and the real answer depends on your product type more than anything else.</p>
+            <div class="art-meta"><span class="tag">11 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-em3">
+              <img src="https://digitenzy.com/src/first-party-data-email-strategy-2026.webp" alt="First Party Data 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Email Marketing</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/first-party-data-email-strategy-2026">First-Party Data Strategy: How to Collect and Use Customer Data for Email Without Violating Privacy Laws</a></h3>
+            <p class="art-excerpt">Third-party cookies are gone. GDPR fines are real. Here's how to build a first-party data engine that makes your email list your most valuable marketing asset.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-em4">
+              <img src="https://digitenzy.com/src/email-automation-workflows-2026.webp" alt="Email Automation 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Email Marketing</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/email-automation-workflows-2026">Email Automation Workflows That Actually Work in 2026: 10 Sequences Every Online Business Needs</a></h3>
+            <p class="art-excerpt">Most email automation advice covers the welcome sequence and stops. I'm covering the 10 flows that made the biggest revenue difference across the businesses I've worked with.</p>
+            <div class="art-meta"><span class="tag">15 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-em5">
+              <img src="https://digitenzy.com/src/grow-email-list-10000-subscribers-2026.webp" alt="Grow Email List 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Email Marketing</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/grow-email-list-10000-subscribers-2026">How to Grow Your Email List to 10,000 Subscribers in 2026 Using Free Traffic and Lead Magnets</a></h3>
+            <p class="art-excerpt">I went from 400 to 11,200 subscribers in eight months without spending on ads. This is the exact process — including the two lead magnets that did 70% of the work.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-em6">
+              <img src="https://digitenzy.com/src/best-email-marketing-platforms-2026.webp" alt="Best Email Platforms 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Email Marketing</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/best-email-marketing-platforms-2026">Best Email Marketing Platforms in 2026: Comparing Mailchimp, Klaviyo, ConvertKit, and Beehiiv for ROI</a></h3>
+            <p class="art-excerpt">I've used all four of these platforms across different projects in the last two years. Here's an honest comparison — including which one I'd pick if I was starting today.</p>
+            <div class="art-meta"><span class="tag">12 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Paid Ads -->
+    <div class="articles-section-block cat-ads">
+      <div class="section-header-full">
+        <span class="cat-dot"></span>
+        <h2 class="cat-title">Paid Ads</h2>
+        <span class="cat-count">6 articles</span>
+        <span class="cat-line"></span>
+        <a href="https://digitenzy.com/category/paid-ads" style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;color:#10B981;white-space:nowrap;">View all →</a>
+      </div>
+      <div class="articles-grid">
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-ad1">
+              <img src="https://digitenzy.com/src/google-performance-max-2026.webp" alt="Performance Max 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Paid Ads</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/google-performance-max-2026">Google Performance Max Campaigns in 2026: Complete Setup Guide + Strategies to Maximize Your ROAS</a></h3>
+            <p class="art-excerpt">PMax is not set-and-forget. I made that mistake for three months. Here's how to actually control it and what signals matter most for getting good results.</p>
+            <div class="art-meta"><span class="tag">16 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-ad2">
+              <img src="https://digitenzy.com/src/meta-ads-vs-google-ads-2026.webp" alt="Meta vs Google Ads 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Paid Ads</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/meta-ads-vs-google-ads-2026">Meta Ads vs Google Ads in 2026: Which Platform Gives You Better ROI? (With Real Data)</a></h3>
+            <p class="art-excerpt">I managed $180K across both platforms last year. My conclusion will probably annoy the people selling you courses on one or the other — because it's neither.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-ad3">
+              <img src="https://digitenzy.com/src/ai-search-ads-chatgpt-google-ai-max-2026.webp" alt="AI Search Ads 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Paid Ads</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/ai-search-ads-chatgpt-google-ai-max-2026">AI Search Ads Are Here: How to Run ChatGPT Ads, Google AI Max, and the New Ad Formats in 2026</a></h3>
+            <p class="art-excerpt">Advertising inside AI chat interfaces is new, weird, and genuinely interesting. Here's what we know so far, what's working in early tests, and how to get in early.</p>
+            <div class="art-meta"><span class="tag">12 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-ad4">
+              <img src="https://digitenzy.com/src/tiktok-ads-beginners-2026.webp" alt="TikTok Ads 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Paid Ads</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/tiktok-ads-beginners-2026">TikTok Ads for Beginners in 2026: How to Run Your First Campaign and Get Results With a Small Budget</a></h3>
+            <p class="art-excerpt">TikTok ads have a very different logic from Meta or Google. Once you understand that, the platform is incredibly efficient — especially under $1,000/month.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-ad5">
+              <img src="https://digitenzy.com/src/retargeting-ads-strategy-2026.webp" alt="Retargeting Ads 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Paid Ads</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/retargeting-ads-strategy-2026">Retargeting Ads Strategy 2026: How Dynamic Funnels Are Replacing Static Campaigns (And How to Win)</a></h3>
+            <p class="art-excerpt">Static retargeting funnels are dying because AI bidding has changed the game. Here's what a dynamic funnel looks like in 2026 and why it performs so much better.</p>
+            <div class="art-meta"><span class="tag">12 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-ad6">
+              <img src="https://digitenzy.com/src/google-ads-500-budget-2026.webp" alt="Google Ads $500 Budget 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Paid Ads</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/google-ads-500-budget-2026">How to Run Profitable Google Ads on a $500/Month Budget: A Step-by-Step 2026 Framework</a></h3>
+            <p class="art-excerpt">$500/month is tight but absolutely viable if you follow a strict framework. I've helped three small businesses become profitable on exactly this budget. Here's the playbook.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Monetization -->
+    <div class="articles-section-block cat-monetize">
+      <div class="section-header-full">
+        <span class="cat-dot"></span>
+        <h2 class="cat-title">Monetization</h2>
+        <span class="cat-count">6 articles</span>
+        <span class="cat-line"></span>
+        <a href="https://digitenzy.com/category/monetization" style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;color:#F59E0B;white-space:nowrap;">View all →</a>
+      </div>
+      <div class="articles-grid">
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-mn1">
+              <img src="https://digitenzy.com/src/how-to-monetize-blog-2026.webp" alt="Monetize Blog 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Monetization</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/how-to-monetize-blog-2026">How to Monetize a Blog in 2026: 9 Proven Revenue Streams That Work Even With Small Traffic</a></h3>
+            <p class="art-excerpt">You don't need 100K monthly visitors to make money from a blog. I started making meaningful income at 8,000 visitors/month — and these were the 9 streams that made it happen.</p>
+            <div class="art-meta"><span class="tag">15 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-mn2">
+              <img src="https://digitenzy.com/src/affiliate-marketing-2026.webp" alt="Affiliate Marketing 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Monetization</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/affiliate-marketing-2026">Affiliate Marketing in 2026: Is It Still Worth It? Best Programs, Strategies, and Real Earning Potential</a></h3>
+            <p class="art-excerpt">Affiliate marketing took a hit when Google started ranking AI content over review articles. But it's not dead — the strategy just looks different now, and I'll show you exactly how.</p>
+            <div class="art-meta"><span class="tag">14 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-mn3">
+              <img src="https://digitenzy.com/src/create-sell-digital-product-2026.webp" alt="Digital Products 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Monetization</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/create-sell-digital-product-2026">How to Create and Sell a Digital Product in 2026: From Idea to $5,000/Month Without Ads</a></h3>
+            <p class="art-excerpt">My first digital product made $300 in its first month. My second made $4,700. The difference had nothing to do with the product itself — it was entirely the positioning.</p>
+            <div class="art-meta"><span class="tag">15 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-mn4">
+              <img src="https://digitenzy.com/src/newsletter-monetization-beehiiv-substack-2026.webp" alt="Newsletter Monetization 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Monetization</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/newsletter-monetization-beehiiv-substack-2026">Newsletter Monetization in 2026: How Creators Are Making $10K/Month with Beehiiv and Substack</a></h3>
+            <p class="art-excerpt">The newsletter economy is real and it's mature. Here's the breakdown of what the $10K/month operators are doing differently from the ones stuck at $500/month.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-mn5">
+              <img src="https://digitenzy.com/src/google-adsense-2026.webp" alt="Google AdSense 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Monetization</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/google-adsense-2026">Google AdSense in 2026: Is It Dead or Still Worth Adding to Your Blog? Honest Data-Backed Answer</a></h3>
+            <p class="art-excerpt">RPMs dropped, zero-click search grew, and AI summaries took over. And yet I still run AdSense on two of my blogs. Here's the honest truth about when it works and when it doesn't.</p>
+            <div class="art-meta"><span class="tag">12 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <div class="article-img-placeholder img-mn6">
+              <img src="https://digitenzy.com/src/sponsored-content-affiliate-digital-products-comparison-2026.webp" alt="Monetization Comparison 2026" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+            </div>
+          </div>
+          <div class="art-body">
+            <div class="art-cat">Monetization</div>
+            <h3 class="art-title"><a href="https://digitenzy.com/sponsored-content-affiliate-digital-products-comparison-2026">Sponsored Content vs Affiliate Links vs Digital Products: Which Monetization Model Pays the Most in 2026?</a></h3>
+            <p class="art-excerpt">I've used all three. The answer depends entirely on your audience size, niche, and how much time you have — so I'll walk through the math for each scenario.</p>
+            <div class="art-meta"><span class="tag">13 min</span><span>June 2026</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- end max-width container -->
+</section>
+
+<!-- ── NEWSLETTER ── -->
+<div class="newsletter-band">
+  <div class="newsletter-inner">
+    <h2>Get the <span>weekly strategy</span> digest</h2>
+    <p>No recycled tips. Just one actionable insight from whatever I'm testing this week — delivered every Tuesday.</p>
+    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+      <input type="email" placeholder="your@email.com" required autocomplete="email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="https://digitenzy.com/" class="logo">Digit<span>enzy</span><span class="logo-dot"></span></a>
+      <p>Real digital marketing strategies, tested and explained for 2026. No hype, no filler — just what actually works.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://digitenzy.com/">Home</a></li>
+        <li><a href="https://digitenzy.com/about">About Us</a></li>
+        <li><a href="https://digitenzy.com/contact">Contact</a></li>
+        <li><a href="https://digitenzy.com/privacy">Privacy Policy</a></li>
+        <li><a href="https://digitenzy.com/terms">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="https://digitenzy.com/seo-content">SEO & Content</a></li>
+        <li><a href="https://digitenzy.com/social-media">Social Media</a></li>
+        <li><a href="https://digitenzy.com/email-marketing">Email Marketing</a></li>
+        <li><a href="https://digitenzy.com/paid-ads">Paid Ads</a></li>
+        <li><a href="https://digitenzy.com/monetization">Monetization</a></li>
+      </ul>
+    </div>
+    </div>
+  <div class="footer-bottom">
+    <span>© 2026 Digitenzy. All rights reserved.</span>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="https://digitenzy.com/privacy-policy">Privacy Policy</a>
+      <a href="https://digitenzy.com/disclaimer">Disclaimer</a>
+      <a href="https://digitenzy.com/contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── SCROLL TO TOP ── -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+</button>
+
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+
+  // Close menu on link click
+  mobileNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    });
+  });
+
+  // Scroll to top
+  const scrollTopBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // Newsletter
+  function handleSubscribe(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    btn.textContent = 'Subscribed!';
+    btn.style.background = '#10B981';
+    setTimeout(() => { btn.textContent = 'Subscribe'; btn.style.background = ''; }, 3000);
+  }
+
+  // Lazy image fallback — show gradient placeholder if image fails
+  document.querySelectorAll('.article-img-wrap img, .card-img img').forEach(img => {
+    img.addEventListener('error', function() {
+      this.style.display = 'none';
+    });
+  });
+
+  // Intersection Observer for card reveal animation
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.article-card, .featured-card').forEach((card, i) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = `opacity 0.4s ease ${(i % 3) * 0.08}s, transform 0.4s ease ${(i % 3) * 0.08}s, box-shadow 0.2s, border-color 0.2s`;
+      observer.observe(card);
+    });
+  }
+</script>
+
+</body>
+</html>
