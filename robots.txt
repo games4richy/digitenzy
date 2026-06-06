@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://digitenzy.com/sitemap.xml
