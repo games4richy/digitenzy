@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6366287173837117" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ5G6MPL1E"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EZ5G6MPL1E');</script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});gtag('js',new Date());gtag('config','G-EZ5G6MPL1E');</script>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--orange:#FF4D1C;--orange-light:#FF7A52;--black:#0E0E0E;--surface:#F5F2EE;--surface2:#EDE9E3;--text:#1A1A1A;--text-muted:#6B6560;--white:#FDFCFA;--border:#DDD8D0;--font-display:'Syne',sans-serif;--font-body:'DM Sans',sans-serif;--font-serif:'Lora',serif}
@@ -112,6 +112,192 @@
   </style>
 </head>
 <body>
+<style>
+.cc-banner{display:none;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:var(--black,#0E0E0E);color:var(--white,#FDFCFA);padding:1rem 1.25rem;font-family:var(--font-body,'DM Sans',Arial,sans-serif);font-size:.85rem;line-height:1.5;box-shadow:0 -4px 20px rgba(0,0,0,.25);border-top:2px solid var(--orange,#FF4D1C)}
+.cc-banner.visible{display:block}
+.cc-banner-inner{max-width:1100px;margin:0 auto;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.cc-banner-inner p{margin:0;max-width:640px;color:rgba(255,255,255,.85);font-family:var(--font-body,'DM Sans',sans-serif)}
+.cc-banner-inner a{color:var(--orange-light,#FF7A52);text-decoration:underline}
+.cc-banner-actions{display:flex;gap:.6rem;flex-shrink:0;flex-wrap:wrap}
+.cc-btn{font-family:var(--font-display,'Syne',sans-serif);border-radius:6px;font-size:.8rem;cursor:pointer;padding:.6rem 1.1rem;border:none}
+.cc-btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff}
+.cc-btn-ghost:hover{border-color:rgba(255,255,255,.6)}
+.cc-btn-primary{background:var(--orange,#FF4D1C);color:#fff;font-weight:700}
+.cc-btn-primary:hover{background:var(--orange-light,#FF7A52)}
+.cc-modal-overlay{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.6);align-items:center;justify-content:center;padding:1.25rem}
+.cc-modal-overlay.visible{display:flex}
+.cc-modal{background:var(--black,#0E0E0E);color:var(--white,#FDFCFA);max-width:520px;width:100%;border-radius:14px;padding:2rem;max-height:88vh;overflow-y:auto;border:1px solid rgba(255,255,255,.08)}
+.cc-modal h2{font-family:var(--font-display,'Syne',sans-serif);font-weight:800;font-size:1.6rem;letter-spacing:-.5px;margin-bottom:1rem;text-transform:uppercase}
+.cc-modal-desc{font-family:var(--font-body,'DM Sans',sans-serif);font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:1.5rem;padding-bottom:1.25rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.cc-toggle-row{padding:1.1rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.cc-toggle-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem}
+.cc-toggle-head span{font-family:var(--font-display,'Syne',sans-serif);font-weight:700;font-size:1rem}
+.cc-toggle-row p{font-family:var(--font-body,'DM Sans',sans-serif);font-size:.82rem;color:rgba(255,255,255,.55);margin:0;line-height:1.55}
+.cc-switch{position:relative;display:inline-block;width:44px;height:24px;flex-shrink:0}
+.cc-switch input{opacity:0;width:0;height:0}
+.cc-slider{position:absolute;cursor:pointer;inset:0;background:rgba(255,255,255,.2);border-radius:24px;transition:.2s}
+.cc-slider::before{content:"";position:absolute;height:18px;width:18px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s}
+.cc-switch input:checked+.cc-slider{background:var(--orange,#FF4D1C)}
+.cc-switch input:checked+.cc-slider::before{transform:translateX(20px)}
+.cc-slider-disabled{cursor:default;opacity:.9}
+.cc-modal-actions{display:flex;flex-direction:column;gap:.7rem;margin-top:1.5rem}
+.cc-modal-actions .cc-btn{width:100%;padding:.85rem}
+.cc-footer-link{background:none;border:none;padding:0;font:inherit;cursor:pointer}
+</style>
+
+<div id="cc-banner" class="cc-banner" role="region" aria-label="Cookie consent">
+  <div class="cc-banner-inner">
+    <p>We use cookies to improve your experience and show relevant ads. See our <a href="https://digitenzy.com/privacy">Privacy Policy</a> for details.</p>
+    <div class="cc-banner-actions">
+      <button id="cc-customize" class="cc-btn cc-btn-ghost">Customize</button>
+      <button id="cc-reject" class="cc-btn cc-btn-ghost">Reject</button>
+      <button id="cc-accept" class="cc-btn cc-btn-primary">Accept All</button>
+    </div>
+  </div>
+</div>
+
+<div id="cc-modal-overlay" class="cc-modal-overlay">
+  <div class="cc-modal" role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+    <h2 id="cc-modal-title">Cookie Preferences</h2>
+    <p class="cc-modal-desc">Choose which cookies we can use. Necessary cookies keep the site working and can't be turned off.</p>
+
+    <div class="cc-toggle-row">
+      <div class="cc-toggle-head">
+        <span>Necessary</span>
+        <label class="cc-switch"><input type="checkbox" checked disabled/><span class="cc-slider cc-slider-disabled"></span></label>
+      </div>
+      <p>Core site functionality. Always on.</p>
+    </div>
+
+    <div class="cc-toggle-row">
+      <div class="cc-toggle-head">
+        <span>Analytics</span>
+        <label class="cc-switch"><input type="checkbox" id="cc-toggle-analytics"/><span class="cc-slider"></span></label>
+      </div>
+      <p>Google Analytics helps us understand how visitors use the site.</p>
+    </div>
+
+    <div class="cc-toggle-row" style="border-bottom:none;">
+      <div class="cc-toggle-head">
+        <span>Advertising</span>
+        <label class="cc-switch"><input type="checkbox" id="cc-toggle-advertising"/><span class="cc-slider"></span></label>
+      </div>
+      <p>Google AdSense uses these to show and measure relevant ads.</p>
+    </div>
+
+    <div class="cc-modal-actions">
+      <button id="cc-save" class="cc-btn cc-btn-primary">Save Preferences</button>
+      <button id="cc-cancel" class="cc-btn cc-btn-ghost">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'cc_consent_v2';
+
+  function gtagUpdate(prefs){
+    if (typeof gtag !== 'function') return;
+    gtag('consent', 'update', {
+      'ad_storage': prefs.advertising ? 'granted' : 'denied',
+      'ad_user_data': prefs.advertising ? 'granted' : 'denied',
+      'ad_personalization': prefs.advertising ? 'granted' : 'denied',
+      'analytics_storage': prefs.analytics ? 'granted' : 'denied'
+    });
+  }
+
+  function getStored(){
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch(e){ return null; }
+  }
+
+  function save(prefs){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs)); } catch(e){}
+    gtagUpdate(prefs);
+  }
+
+  function setToggles(prefs){
+    var a = document.getElementById('cc-toggle-analytics');
+    var b = document.getElementById('cc-toggle-advertising');
+    if (a) a.checked = !!prefs.analytics;
+    if (b) b.checked = !!prefs.advertising;
+  }
+
+  function showBanner(){
+    var el = document.getElementById('cc-banner');
+    if (el) el.classList.add('visible');
+  }
+  function hideBanner(){
+    var el = document.getElementById('cc-banner');
+    if (el) el.classList.remove('visible');
+  }
+  function openModal(){
+    var stored = getStored() || {analytics:false, advertising:false};
+    setToggles(stored);
+    var el = document.getElementById('cc-modal-overlay');
+    if (el) el.classList.add('visible');
+  }
+  function closeModal(){
+    var el = document.getElementById('cc-modal-overlay');
+    if (el) el.classList.remove('visible');
+  }
+
+  window.openCookieSettings = function(){
+    openModal();
+  };
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var stored = getStored();
+    if (stored) {
+      gtagUpdate(stored);
+    } else {
+      showBanner();
+    }
+
+    document.addEventListener('click', function(e){
+      var t = e.target;
+      if (t.id === 'cc-accept') {
+        var prefs = {analytics:true, advertising:true};
+        save(prefs);
+        hideBanner();
+        closeModal();
+      }
+      if (t.id === 'cc-reject') {
+        var prefs2 = {analytics:false, advertising:false};
+        save(prefs2);
+        hideBanner();
+        closeModal();
+      }
+      if (t.id === 'cc-customize') {
+        openModal();
+      }
+      if (t.id === 'cc-save') {
+        var a = document.getElementById('cc-toggle-analytics');
+        var b = document.getElementById('cc-toggle-advertising');
+        var prefs3 = {analytics: a ? a.checked : false, advertising: b ? b.checked : false};
+        save(prefs3);
+        hideBanner();
+        closeModal();
+      }
+      if (t.id === 'cc-cancel') {
+        closeModal();
+      }
+      if (t.id === 'cc-modal-overlay') {
+        closeModal();
+      }
+      if (t.classList && t.classList.contains('cc-footer-link')) {
+        e.preventDefault();
+        openModal();
+      }
+    });
+  });
+})();
+</script>
+
+
+
 
 <header>
   <div class="header-inner">
@@ -163,7 +349,7 @@
 <div class="article-layout">
   <article class="article-body">
 
-    <p>Somebody sent me a blog post draft last March and asked why it was not ranking after four months of sitting on page two. The post was 2,400 words. The keyword research was done right. The meta description was optimised. On-page elements were clean. I read the post and the problem was obvious inside the first three paragraphs: it answered a question nobody was actually asking. The keyword was correct. The intent behind the keyword had not been studied. The article was written to rank for a phrase, not to answer the actual question people were typing when they used that phrase.</p>
+    <p>A 2,400-word post, correct keyword research, an optimized meta description, clean on-page elements — and four months stuck on page two of Google. It's one of the most common support requests in SEO, and the problem is almost always visible within the first three paragraphs: the post answers a question nobody is actually asking. The keyword itself was correct. The intent behind the keyword was never studied. The article was written to rank for a phrase, not to answer the actual question people are typing when they use that phrase.</p>
 
     <p>That gap, between knowing the keyword and understanding the intent behind it, is where most blog posts fail in 2026. Everything else, the heading structure, the internal links, the schema markup, the word count, it all matters. But it is downstream of getting the intent right. Get that wrong and none of the rest of it helps.</p>
 
@@ -385,7 +571,7 @@
       <ul>
         <li><a href="https://digitenzy.com/">Home</a></li>
         <li><a href="https://digitenzy.com/about">About Us</a></li>
-        <li><a href="https://digitenzy.com/contact">Contact</a></li>
+        <li><a href="https://digitenzy.com/contact">Contact</a><a href="#" class="cc-footer-link">Cookie Settings</a></li>
         <li><a href="https://digitenzy.com/privacy">Privacy Policy</a></li>
         <li><a href="https://digitenzy.com/terms">Terms of Service</a></li>
       </ul>
