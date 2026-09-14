@@ -341,7 +341,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.08);color:
 
     <p id="why">Deliverability is invisible until it's already costing you money, because unlike a broken landing page, nothing tells you an email didn't arrive. It just doesn't get opened, and it's easy to assume the subject line or content was the problem when the real issue is that a meaningful chunk of the list never saw the email at all. It landed in spam, or got silently rejected before it ever reached an inbox.</p>
 
-    <p>Deliverability got measurably harder starting in February 2024, when Google and Yahoo began jointly enforcing a shared set of bulk sender requirements, with Microsoft following with its own enforcement in May 2025. By 2026 the grace period is fully over: compliant senders now average around 89% inbox placement, while non compliant senders see roughly 22 to 34% of their email routed to spam, a 3x to 7x penalty for skipping the basics. Here's what actually determines whether your emails reach the inbox.</p>
+    <p>Deliverability got harder starting in February 2024, when Google and Yahoo began jointly enforcing a shared set of bulk sender requirements, with Microsoft following with its own enforcement in May 2025. By 2026 the grace period is fully over: compliant senders now average around 89% inbox placement, while non compliant senders see roughly 22 to 34% of their email routed to spam, a 3x to 7x penalty for skipping the basics. The sections below cover what decides whether your emails reach the inbox.</p>
 
     <h2 id="auth">SPF, DKIM, and DMARC: The Non-Negotiable Setup</h2>
 
@@ -363,7 +363,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.08);color:
 
     <h2 id="reputation">The Sender Reputation Signals Inbox Providers Actually Track</h2>
 
-    <p>Authentication gets you in the door. Sender reputation determines whether you stay there. Gmail, Outlook, and Yahoo track your domain and IP reputation continuously based on real recipient behavior, and this reputation is what ultimately decides inbox placement versus spam folder placement for borderline sends.</p>
+    <p>Authentication gets you in the door. Sender reputation determines whether you stay there. Gmail, Outlook, and Yahoo track your domain and IP reputation continuously based on real recipient behavior, and this reputation is what decides inbox placement versus spam folder placement for borderline sends.</p>
 
     <ul>
       <li><strong>Spam complaint rate:</strong> Keep this under 0.1% as your operating target, 0.3% as a hard ceiling. Google's own guidance is explicit that 0.3% is where enforcement begins, not a safe number to hover near. At 10,000 emails sent, it only takes 30 spam reports to cross that line.</li>
@@ -376,7 +376,7 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,.08);color:
 
     <h2 id="hygiene">List Hygiene: The Fastest Way to Fix a Damaged Sender Score</h2>
 
-    <p>If your deliverability has already degraded, the fastest recovery lever isn't better copy. It's aggressively cleaning your list. Every inactive subscriber who never opens or clicks is dead weight that drags down your engagement rate every single send, which is the exact signal inbox providers use to decide whether future emails land in the primary inbox.</p>
+    <p>If your deliverability has already degraded, better copy won't fix it quickly. Cleaning your list hard will. Every inactive subscriber who never opens or clicks is dead weight that drags down your engagement rate every single send, which is the exact signal inbox providers use to decide whether future emails land in the primary inbox.</p>
 
     <div class="callout">
       <p><strong>The 90-day rule:</strong> Segment out anyone who hasn't opened or clicked in 90 days into a separate re-engagement sequence, one or two emails asking if they still want to hear from you, with a clear one click way to confirm. Anyone who doesn't respond gets removed from your active sending list entirely. This typically costs you 15 to 30% of total subscriber count and improves engagement rate, and therefore deliverability, on the remaining list within two to three sends.</p>
